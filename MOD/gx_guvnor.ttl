@@ -53,9 +53,7 @@
 
     
 rdfs:comment """
-
-...
-
+Overdrive/distortion pedal simulation
 """;
 
     lv2:port  [
