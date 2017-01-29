@@ -79,10 +79,14 @@ clean :
 	@rm -rf ./$(BUNDLE)
 	@echo ". ." $(BLUE)", clean up"$(NONE)
 
-install : all
+install :
+ifneq ("$(wildcard ./$(BUNDLE))","")
 	@mkdir -p $(DESTDIR)$(INSTALL_DIR)/$(BUNDLE)
-	install ./$(BUNDLE)/* $(DESTDIR)$(INSTALL_DIR)/$(BUNDLE)
+	cp ./$(BUNDLE)/* $(DESTDIR)$(INSTALL_DIR)/$(BUNDLE)
 	@echo ". ." $(BLUE)", done"$(NONE)
+else
+	@echo ". ." $(BLUE)", you must build first"$(NONE)
+endif
 
 uninstall :
 	@rm -rf $(INSTALL_DIR)/$(BUNDLE)
