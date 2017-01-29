@@ -187,6 +187,9 @@
 .mod-pedal-boxy{{{cns}}} .top {
     margin-top:0px !important;
 }
+.mod-pedal-boxy{{{cns}}} .bottom {
+    margin-bottom:0px !important;
+}
 
 .mod-pedal-boxy{{{cns}}}.mod-one-footswitch-presets .mod-control-group {
     margin:10px !important;
@@ -202,11 +205,34 @@
     position:relative;
 }
 
+.mod-pedal-boxy{{{cns}}} .mod-control-group .mod-bottom-knob {
+    overflow:hidden;
+    position:relative;
+    margin-bottom:0px !important;
+}
+
 .mod-pedal-boxy{{{cns}}} .mod-control-group .mod-knob > span.mod-knob-title {
     bottom:0px;
     display:block;
     font-size:11px;
     font-weight:bold;
+    height:12px;
+    left:0;
+    line-height:1;
+    margin:0;
+    overflow:hidden;
+    padding:0;
+    position:absolute;
+    right:0;
+    text-transform:uppercase;
+}
+
+.mod-pedal-boxy{{{cns}}} .mod-control-group .mod-bottom-knob > span.mod-knob-top-title {
+    top:0px;
+    display:block;
+    font-size:11px;
+    font-weight:bold;
+    color:black;
     height:12px;
     left:0;
     line-height:1;
@@ -269,9 +295,18 @@
     width:60px;
     margin:0 auto;
 }
+.mod-pedal-boxy{{{cns}}}.mod-five-knobs .mod-control-group .mod-bottom-knob .mod-knob-image {
+    background-image:url(/resources/knobs/lata/lata.png{{{ns}}});
+    background-repeat:no-repeat;
+    background-size:auto 60px;
+    height:60px;
+    width:60px;
+    margin:11px auto;
+}
 .mod-pedal-boxy{{{cns}}}.mod-three-knobs .mod-control-group .mod-knob,
 .mod-pedal-boxy{{{cns}}}.mod-four-knobs .mod-control-group .mod-knob,
 .mod-pedal-boxy{{{cns}}}.mod-five-knobs .mod-control-group .mod-knob,
+.mod-pedal-boxy{{{cns}}}.mod-five-knobs .mod-control-group .mod-bottom-knob,
 .mod-pedal-boxy{{{cns}}}.mod-six-knobs .mod-control-group .mod-knob,
 .mod-pedal-boxy{{{cns}}}.mod-seven-knobs .mod-control-group .mod-knob,
 .mod-pedal-boxy{{{cns}}}.mod-eight-knobs .mod-control-group .mod-knob {
@@ -1186,5 +1221,7 @@
 }.mod-pedal-boxy{{{cns}}} .mod-control-group.mod-green .mod-knob .mod-knob-image {
     background-image:url(/resources/knobs/boxy/green.png{{{ns}}});
 }.mod-pedal-boxy{{{cns}}} .mod-control-group.mod-cairo .mod-knob .mod-knob-image {
+    background-image:url(/resources/knobs/boxy/cairo.png{{{ns}}});
+}.mod-pedal-boxy{{{cns}}} .mod-control-group.mod-cairo .mod-bottom-knob .mod-knob-image {
     background-image:url(/resources/knobs/boxy/cairo.png{{{ns}}});
 }

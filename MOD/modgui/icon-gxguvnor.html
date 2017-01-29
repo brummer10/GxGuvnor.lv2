@@ -4,12 +4,36 @@
     <div class="mod-plugin-name"><h1>{{label}}</h1></div>
     <div class="mod-light on" mod-role="bypass-light"></div>
     <div class="mod-control-group mod-{{knob}} clearfix">
-        {{#controls}}
+        {{#controls.0}}
+        <div class="mod-bottom-knob" title="{{comment}}">
+            <span class="mod-knob-top-title">{{name}}</span>
+            <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="{{symbol}}"></div>
+        </div>
+        {{/controls.0}}
+        {{#controls.1}}
         <div class="mod-knob" title="{{comment}}">
             <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="{{symbol}}"></div>
             <span class="mod-knob-title">{{name}}</span>
         </div>
-        {{/controls}}
+        {{/controls.1}}
+        {{#controls.2}}
+        <div class="mod-knob" title="{{comment}}">
+            <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="{{symbol}}"></div>
+            <span class="mod-knob-title">{{name}}</span>
+        </div>
+        {{/controls.2}}
+        {{#controls.3}}
+        <div class="mod-knob" title="{{comment}}">
+            <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="{{symbol}}"></div>
+            <span class="mod-knob-title">{{name}}</span>
+        </div>
+        {{/controls.3}}
+        {{#controls.4}}
+        <div class="mod-bottom-knob" title="{{comment}}">
+            <span class="mod-knob-top-title">{{name}}</span>
+            <div class="mod-knob-image" mod-role="input-control-port" mod-port-symbol="{{symbol}}"></div>
+        </div>
+        {{/controls.4}}
     </div>
     <div class="mod-footswitch" mod-role="bypass"></div>
     <div class="mod-pedal-input">
