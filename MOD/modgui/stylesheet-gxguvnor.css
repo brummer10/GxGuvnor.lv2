@@ -1010,11 +1010,11 @@
 .mod-pedal-boxy{{{cns}}}.mod-flowerpower .mod-enumerated,
 .mod-pedal-boxy{{{cns}}}.mod-darkblue .mod-enumerated,
 .mod-pedal-boxy{{{cns}}}.mod-warning .mod-enumerated,
-.mod-pedal-boxy{{{cns}}}.mod-green .mod-enumerated
-.mod-pedal-boxy{{{cns}}}.mod-saturator .mod-enumerated
-.mod-pedal-boxy{{{cns}}}.mod-stb .mod-enumerated
-.mod-pedal-boxy{{{cns}}}.mod-hyperion .mod-enumerated
-.mod-pedal-boxy{{{cns}}}.mod-tonemachine .mod-enumerated
+.mod-pedal-boxy{{{cns}}}.mod-green .mod-enumerated,
+.mod-pedal-boxy{{{cns}}}.mod-saturator .mod-enumerated,
+.mod-pedal-boxy{{{cns}}}.mod-stb .mod-enumerated,
+.mod-pedal-boxy{{{cns}}}.mod-hyperion .mod-enumerated,
+.mod-pedal-boxy{{{cns}}}.mod-tonemachine .mod-enumerated,
 .mod-pedal-boxy{{{cns}}}.mod-guvnor .mod-enumerated
 {
     background-image:url(/resources/utils/dropdown-arrow-white.png{{{ns}}});
