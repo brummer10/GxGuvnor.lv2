@@ -257,8 +257,12 @@ static void port_event(LV2UI_Handle handle,
     gx_guvnorUI* ui = (gx_guvnorUI*)handle;
     if ( format == 0 ) {
         float *value = (float*)buffer;
-        ui->block = 1;
-        gtk_adjustment_set_value(GTK_ADJUSTMENT(ui->adj[port_index-2]), (gdouble) (*value));
+        float v = gtk_adjustment_get_value(GTK_ADJUSTMENT(ui->adj[port_index-2]));
+        if (v != (*value)) {
+            ui->block = 1;
+            gtk_adjustment_set_value(GTK_ADJUSTMENT(ui->adj[port_index-2]), (gdouble) (*value));
+        
+        }
     }
 
 }
